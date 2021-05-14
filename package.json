@@ -1,0 +1,31 @@
+{
+  "name": "izn-resources",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "examples/*",
+      "docs"
+    ],
+    "nohoist": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iznyn/izn-resources.git"
+  },
+  "author": "M Arif Mahthunisnaini <mahthunis@gmail.com>",
+  "scripts": {
+    "pkg": "manypkg run",
+    "check:pkgs": "manypkg check",
+    "fix:pkgs": "manypkg fix",
+    "version:pkgs": "changeset version",
+    "release": "changeset publish",
+    "docs": "yarn workspace @izn-resources/docs",
+    "docs:start": "yarn docs start",
+    "docs:build": "yarn docs build"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.16.0",
+    "@manypkg/cli": "^0.17.0"
+  }
+}
