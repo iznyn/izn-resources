@@ -26,6 +26,9 @@
   },
   "dependencies": {
     "@changesets/cli": "^2.16.0",
-    "@manypkg/cli": "^0.17.0"
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@manypkg/cli": "^0.17.0",
+    "husky": "^6.0.0"
   }
 }
